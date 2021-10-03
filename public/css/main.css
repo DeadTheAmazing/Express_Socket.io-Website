@@ -1,0 +1,31 @@
+#body {
+    margin:2px;
+}
+#titlebar {
+    text-align:center;
+    font-family: "Monaco",monospace;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    text-shadow: -1px -1px 3px #001629, 1px -1px 3px #001629, -1px 1px 3px #001629, 1px 1px 3px #001629;
+}
+#titlebar h1 {
+    letter-spacing:-2px;
+    color:#8ec7f5;
+}
+#titlebar p {
+    letter-spacing:normal;
+    color:#afcbe3;
+}
+
+#mainbody {
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    border: 1px solid #001629;
+    background-color: #afcbe3;
+    border-radius: 5px;
+    margin:2px;
+    padding:2px;
+    font-family: "Monaco",monospace;
+}

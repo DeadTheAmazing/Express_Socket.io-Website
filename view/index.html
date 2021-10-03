@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example page</title>
+        <link rel="stylesheet" href="../css/main.css" /> <!--###      to grab from the static folder the format is pretend "../" is the public folder and then refer to everything in it like normal      ###-->
+    </head>
+    <body>
+        <div id="titlebar">
+            <h1>Your Example Page</h1>
+            <p>Change this as you need!</p>
+            <button onclick="socket.emit('hello',`Hello website i am visiting!`);">Press me to send the server a message</button> <!--###     button to send server a message      ###-->
+        </div>
+        <div id="mainbody">
+
+        </div> 
+    </body>
+    <script src="/socket.io/socket.io.js"></script> <!--###      this allows socket to socket      ###-->
+<script>
+    var socket = io(); // initalize it
+    var mainbody = document.getElementById('mainbody'); // grab mainbody
+
+    socket.emit('hello',`Hello website i am visiting!`); // emit on the 'hello line' with a simple string
+
+    socket.on('helloback', function(msg) { // when server sends user helloback message
+        mainbody.innerHTML += `Server has said : ${msg + " " + Date()}<br>`; // add text to the mainbody saying what the server sent and at what time!
+    });
+</script>
+</html>
