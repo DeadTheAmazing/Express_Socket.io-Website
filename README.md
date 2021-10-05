@@ -14,26 +14,22 @@
 This website is built off of the **[Express](https://expressjs.com)** and **[Socket.io](https://socket.io)** libraries and runs on **[Node.js](https://nodejs.org/en/)**
 
 ## Installation
-
-Use the package manager **[npm](https://www.npmjs.com)** to install express
-
-```bash
-npm i express
-```
-and then socket.io.
-```bash
-npm i socket.io
-```
-
-## Starting
-To start the server first you need to go into the directory using `cd`
+Move into the directory using `cd`
 ```bash
 cd ./Your/Directory/Here
 ```
-and then start it using `node`
+Install all the dependencies using `node`
+```bash
+node install
+```
+Use the package manager **[npm](https://www.npmjs.com)** to install express
+
+## Starting
+While in the same directory:
+start it using `node`
 ```bash
 node .
-``` 
+```
 The code above will start the index.js file and run the code on port **80**
 
 ## Details
